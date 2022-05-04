@@ -16,7 +16,7 @@
  * E por último um git push -u origin trybe-skills-changes;
 
 3. Abra um Pull Request com uma descrição detalhada:
-    * O merge deve ser feito apenas quando chegar no exercício 10.
+    * O merge deve ser feito apenas quando chegar no exercício 8.
 
 4. Retorne para a branch principal, main, com o comando: git checkout main;
     * **code:** > git checkout main
@@ -30,3 +30,12 @@
 7. No mesmo arquivo .txt que você modificou no passo 4, também ao final da sua lista de habilidades, adicione mais um aprendizado que você terá nos próximos blocos:
     * **code:** > cat >> trybe-skills.txt 
                 - javascript
+                
+    * Faça um git add, git commit e git push;
+    * **code:** > git add .
+                > git commit -m "adiciona mais uma skill"
+                > git push -u origin trybe-skills-updates
+    
+    * Abra um Pull Request
+
+8. Agora, faça o merge das branches trybe-skills-changes e trybe-skills-updates na branch master, através do Pull Request:

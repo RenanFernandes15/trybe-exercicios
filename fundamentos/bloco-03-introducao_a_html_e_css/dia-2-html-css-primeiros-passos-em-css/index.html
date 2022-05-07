@@ -16,6 +16,7 @@
         p {
             font-size: 3em;
             font-family: sans-serif;
+            font-weight: 600;
             
         }
 
@@ -25,42 +26,64 @@
             font-family: sans-serif;
         }
 
+
         .font-family {
             font-family: 'Mukta', sans-serif;
+            font-size: 18px;
+            color: black;
+            font-style: italic;
+            text-align: center;
+
+        }
+
+        .backcolor {
+            background-color: rgb(105, 105, 105, 0.2);
+            padding: 1px 10px;
+            
         }
 
         .corfundo{
             background-color: rgb(255, 228, 196);
-            
+            border-radius: 4px;
+            padding: 5px 40px;     
         } 
 
         #verde {
             background-color: green;
+            line-height: 60px;
+            
         }
 
         #amarelo {
            background-color: yellow;
+           line-height: 60px;
         }
 
         #vermelho {
             background-color: red;
+            line-height: 60px;
         }
 
         #marrom {
             background-color:brown ;
+            line-height: 60px;
             
         }
     </style>
 </head>
 <body>
     <h1>Exercícios 3.2</h1>
+    <div class="backcolor"><hr>
+    <br>
     <p class="corfundo">Qual é sua cor favorita?</p>
-    <ul class="corfundo">
+    <ul class="corfundo font-family">
         <li id="verde" >Verde</li>
         <li id="amarelo">Amarelo</li>
         <li id="vermelho">vermelho</li>
         <li id="marrom">Marrom</li>
     </ul>
+    <br><hr>
+    </div>
     
 </body>
 </html>

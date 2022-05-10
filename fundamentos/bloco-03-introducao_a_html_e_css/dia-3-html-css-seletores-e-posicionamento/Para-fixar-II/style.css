@@ -1,6 +1,6 @@
 div:hover {
     border: 2px solid rgba(128, 128, 128, 0.5);
-    width: 30%;
+    width: 13rem;
     border-radius: 6px;
 }
 
@@ -24,3 +24,8 @@ div:nth-of-type(5) {
     background-color: cornflowerblue;
 }
 
+h3 {
+    font-family: sans-serif;
+    font-weight: 900;
+    margin-left: auto;
+}

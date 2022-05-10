@@ -14,6 +14,7 @@ div:nth-of-type(2) {
 
 div:nth-of-type(3) {
     background-color:paleturquoise;
+    padding: 10px 5px;
 }
 
 div:nth-of-type(4) {
@@ -24,8 +25,13 @@ div:nth-of-type(5) {
     background-color: cornflowerblue;
 }
 
+div {
+    width: 12rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
 h3 {
     font-family: sans-serif;
     font-weight: 900;
-    margin-left: auto;
 }

@@ -1,0 +1,24 @@
+section#resultsS ul {
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+    
+}
+li {
+    display: inline-block
+}
+
+li.first {
+    margin-left: 41%;
+    margin-right: 300px;
+    padding-bottom: 10px;
+}
+
+li.second {
+    padding: 0px 100px 10px 100px;
+    margin-left: 7.5%;
+}
+
+li.third {
+    padding: 0px 100px 10px 100px;
+}

@@ -1,21 +1,21 @@
 // exercicio-1
 
-// let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
-// let menuServices = menu[1];
+let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+let menuServices = menu[1];
 
-// console.log(menuServices);
+console.log(menuServices);
 
-// // exercicio-2
+// exercicio-2
 
-// let indexOfPortfolio = menu.indexOf('Portfólio');
+let indexOfPortfolio = menu.indexOf('Portfólio');
 
-// console.log(indexOfPortfolio);
+console.log(indexOfPortfolio);
 
-// // exercicio-3
+// exercicio-3
 
-// menu.push('Contato');
+menu.push('Contato');
 
-// console.log(menu);
+console.log(menu);
 
 // Para-fixar-2
 // exercicio-1

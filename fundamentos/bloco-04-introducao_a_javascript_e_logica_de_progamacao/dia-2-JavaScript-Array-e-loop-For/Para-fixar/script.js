@@ -1,30 +1,30 @@
 // // exercicio-1
 
-// let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
-// let menuServices = menu[1];
+let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+let menuServices = menu[1];
 
-// console.log(menuServices);
+console.log(menuServices);
 
 // // exercicio-2
 
-// let indexOfPortfolio = menu.indexOf('Portfólio');
+let indexOfPortfolio = menu.indexOf('Portfólio');
 
-// console.log(indexOfPortfolio);
+console.log(indexOfPortfolio);
 
 // // exercicio-3
 
-// menu.push('Contato');
+menu.push('Contato');
 
-// console.log(menu);
+console.log(menu);
 
-// // Para-fixar-2
-// // exercicio-1
+// Para-fixar-2
+// exercicio-1
 
-// let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
+let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
 
-// for(let index = 0; index < groceryList.length; index += 1) {
-//   console.log(groceryList[index]);
-// };
+for(let index = 0; index < groceryList.length; index += 1) {
+  console.log(groceryList[index]);
+};
 
 // Para-fixar-3
 // exercicios-1

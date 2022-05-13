@@ -7,3 +7,6 @@ console.log(menuServices);
 
 // exercicio-2
 
+let indexOfPortfolio = menu.indexOf('Portfólio');
+
+console.log(indexOfPortfolio);

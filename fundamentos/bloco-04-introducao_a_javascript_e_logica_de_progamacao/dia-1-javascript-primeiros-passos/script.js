@@ -17,12 +17,38 @@
 
 // exercicio-2
  
-const c = 36;
-const d = 13;
+// const c = 36;
+// const d = 13;
 
-if (d > c) {
-  console.log(d, "é maior que", c);
+// if (d > c) {
+//   console.log(d, "é maior que", c);
+// }
+// else {
+//   console.log(c, "é maior que", d);
+// }
+
+// exercicio-3
+
+// const a = 12;
+// const b = 4;
+// const c = 36;
+
+//  if (a > b > c)
+
+// console.log(a > b > c);
+
+// exercicio-4
+
+const a = 36;
+let valor;
+
+if (a % 2 !== 0) {
+  valor = "negative";
+}
+else if (a === 0) {
+  valor = "zero";
 }
 else {
-  console.log(c, "é maior que", d);
+  valor = "positive";
 }
+console.log(valor);

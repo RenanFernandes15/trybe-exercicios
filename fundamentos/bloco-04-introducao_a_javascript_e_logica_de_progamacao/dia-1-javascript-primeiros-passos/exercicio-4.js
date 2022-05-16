@@ -1,13 +1,13 @@
 const a = 36;
 let valor;
 
-if (a % 2 !== 0) {
+if (a < 0) {
   valor = "negative";
 }
-else if (a === 0) {
-  valor = "zero";
+else if (a > 0) {
+  valor = "positive";
 }
 else {
-  valor = "positive";
+  valor = "zero";
 }
 console.log(valor);

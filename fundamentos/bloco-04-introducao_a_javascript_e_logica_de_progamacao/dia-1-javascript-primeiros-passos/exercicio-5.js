@@ -2,28 +2,17 @@
 //
 
 const a = 50;
-const b = 51;
+const b = - 50;
 const c = 80;
 
-if (a + b + c === 180) {
-  console.log(true)
+if (a > 0 && b > 0 && c >0) {
+  if (a + b + c === 180) {
+    console.log(true);
+  }
+  else {
+    console.log(false);
+  }
 }
-else if (a % 2 !== 0) {
-  console.log("Erro: angulo 'a' invalido. O valor de ser positivo");
-  console.log("Exemplo: 2, 4, 6, 12, 20...");
-}
-else if (b % 2 !== 0) {
-  console.log("Erro: angulo 'b' invalido. O valor de ser positivo");
-  console.log("Exemplo: 2, 4, 6, 12, 20...");
-}
-else if (c % 2 !== 0) {
-  console.log("Erro: angulo 'c' invalido. O valor de ser positivo");
-  console.log("Exemplo: 2, 4, 6, 12, 20...");
-}
-else if (a, b, c !== typeof(0)) {
-  console.log("Erro: Valor invalido! O valor deve ser somente numerico.");
-  console.log("Exemplo: 1, 2, 10, 20...")
-}
-else if (a + b + c !== 180) {
-  console.log(false);
-}
+else {
+  console.log("Erro: angulo invalido. O valor de ser positivo");
+};

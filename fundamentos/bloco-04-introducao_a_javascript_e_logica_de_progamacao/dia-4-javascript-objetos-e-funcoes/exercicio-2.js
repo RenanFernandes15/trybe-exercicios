@@ -5,6 +5,6 @@ let info = {
 };
 
 info['recorrente'] = 'Sim';
-for (let key in info) {
-  console.log(key + ': ' + info[key]);
+for (let index in info) {
+  console.log(index + ': ' + info[index]);
 };

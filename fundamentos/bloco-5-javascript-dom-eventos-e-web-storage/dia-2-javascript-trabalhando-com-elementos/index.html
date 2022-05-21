@@ -97,7 +97,23 @@
         local.appendChild(element);
       }
       image('https://picsum.photos/200', '.left-content', 'small-image');
-
+      
+      function list(tag, position, text) {
+        let local = document.querySelector(position);
+        let element = document.createElement(tag);
+        element.innerText = text;
+        local.appendChild(element);
+      }
+      list('ul', '.right-content')
+      
+      let numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      
+      function createList(array) {
+        for (let index of array) {
+          list('li', '.right-content ul', index);
+        }       
+      }
+      createList(numbers);
     </script>
   </body>
 </html>

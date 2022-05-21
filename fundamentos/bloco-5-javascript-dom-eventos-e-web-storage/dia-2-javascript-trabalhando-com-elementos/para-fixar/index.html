@@ -19,5 +19,13 @@
   document.querySelector('#elementoOndeVoceEsta').nextSibling
   document.querySelector('#elementoOndeVoceEsta').nextElementSibling
   document.querySelector('#pai').lastElementChild.previousElementSibling;
-  
+
+  let pai = document.querySelector('#pai');
+  let secao = document.createElement('section');
+  pai.appendChild(secao);
+  pai.lastElementChild.className = 'irmaoDoOndeVoceEsta';
+  let estou = document.querySelector('#elementoOndeVoceEsta');
+  let sec = document.createElement('section');
+  estou.appendChild(sec);
 </script>
+<!-- .className('irmaoDoOndeEsta') -->

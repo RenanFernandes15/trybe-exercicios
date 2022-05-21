@@ -76,7 +76,7 @@
       }
       main('section', 'center-content');
 
-      function createElement(tag, text, local, clas) {
+      function createElement(tag, text, local, clas,) {
         let position = document.querySelector(local);
         let element = document.createElement(tag);
         element.className = clas;
@@ -88,6 +88,16 @@
       main('section', 'left-content');
 
       main('section', 'right-content');
+
+      const image = (src, position, clas) => {
+        let local = document.querySelector(position);
+        let element = document.createElement('img');
+        element.src = src;
+        element.className = clas;
+        local.appendChild(element);
+      }
+      image('https://picsum.photos/200', '.left-content', 'small-image');
+
     </script>
   </body>
 </html>

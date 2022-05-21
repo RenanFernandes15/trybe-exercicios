@@ -58,11 +58,11 @@
   <body>
     <script>
       function body(tag, text, clas) {
-        let corpo = document.body;
+        let body = document.body;
         let element = document.createElement(tag);
         element.className = clas;
         element.innerText = text;
-        corpo.appendChild(element)
+        body.appendChild(element);
       }
       body('h1', 'Exercício 5.2 - JavaScript DOM',);
 
@@ -76,7 +76,15 @@
       }
       main('section', 'center-content');
 
-      // function paragraph
+      function createElement(tag, text, local, clas) {
+        let position = document.querySelector(local);
+        let element = document.createElement(tag);
+        element.className = clas;
+        element.innerText = text;
+        position.appendChild(element);
+      }
+      createElement('p', 'cachorro uivando', '.center-content')
+
     </script>
   </body>
 </html>

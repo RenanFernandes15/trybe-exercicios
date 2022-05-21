@@ -69,12 +69,14 @@
       body('main', '', 'main-content');
 
       function main(tag, clas) {
-        let main = document.querySelector('main');
+        let main = document.querySelector('.main-content');
         let element = document.createElement(tag);
         element.className = clas;
-        main.appendChild(elemnet);
+        main.appendChild(element);
       }
-      main('sectin', 'center-content');
+      main('section', 'center-content');
+
+      // function paragraph
     </script>
   </body>
 </html>

@@ -37,5 +37,14 @@
 
   let fiDofiDofi = document.querySelector('.primeiroFilhoDoFilhoDoFilho');
   fiDofiDofi.parentElement.parentElement.nextElementSibling;
+  
+  let primeiroFilho = document.querySelector("#primeiroFilho");
+  pai.removeChild(primeiroFilho);
+  for (let index = 0; index <= 2; index += 1) {
+    pai.removeChild(pai.lastElementChild)[index];
+  }
+  estou.removeChild(estou.lastElementChild);
+  estou.removeChild(estou.lastElementChild);
+  filhoDoFilho.removeChild(filhoDoFilho.firstElementChild);
+  
 </script>
-<!-- .className('irmaoDoOndeEsta') -->

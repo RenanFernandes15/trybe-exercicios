@@ -6,6 +6,3 @@ function somatorio(valor) {
   return soma;
 }
 console.log(somatorio(5));
-
-  
-

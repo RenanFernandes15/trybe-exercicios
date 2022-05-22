@@ -118,6 +118,14 @@
       for (let index = 1; index <= 3; index += 1) {
         createElement('h3', 'cachorro latiu', '.main-content');
       };
+
+      function classAad(position, clas) {
+        let local = document.querySelector(position);
+        local.className = clas;
+      }
+
+      classAad('h1', 'title');
+      
     </script>
   </body>
 </html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function body(tag, text, clas) {
+        let body = document.body;
+        let element = document.createElement(tag);
+        element.className = clas;
+        element.innerText = text;
+        body.appendChild(element);
+      }
+      body('h1', 'Exercício 5.2 - JavaScript DOM',);
+
+      body('main', '', 'main-content');
+
+      function main(tag, clas) {
+        let main = document.querySelector('.main-content');
+        let element = document.createElement(tag);
+        element.className = clas;
+        main.appendChild(element);
+      }
+      main('section', 'center-content');
+
+      function createElement(tag, text, local, clas,) {
+        let position = document.querySelector(local);
+        let element = document.createElement(tag);
+        element.className = clas;
+        element.innerText = text;
+        position.appendChild(element); 
+      }
+      createElement('p', 'cachorro uivando', '.center-content');
+
+      main('section', 'left-content');
+
+      main('section', 'right-content');
+
+      const image = (src, position, clas) => {
+        let local = document.querySelector(position);
+        let element = document.createElement('img');
+        element.src = src;
+        element.className = clas;
+        local.appendChild(element);
+      }
+      image('https://picsum.photos/200', '.left-content', 'small-image');
+      
+      function list(tag, position, text) {
+        let local = document.querySelector(position);
+        let element = document.createElement(tag);
+        element.innerText = text;
+        local.appendChild(element);
+      }
+      list('ul', '.right-content')
+      
+      let numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      
+      function createList(array) {
+        for (let index of array) {
+          list('li', '.right-content ul', index);
+        }       
+      }
+      createList(numbers);
+
+      for (let index = 1; index <= 3; index += 1) {
+        createElement('h3', 'cachorro latiu', '.main-content');
+      };
+
+      function classAad(position, clas, index) {
+        let local = document.querySelectorAll(position)[index];
+        local.className = clas;
+      }
+
+      classAad('h1', 'title', 0);
+
+      for (let index = 0; index <= 2; index += 1) {
+        classAad('h3', 'description', index);
+      }
+
+      let principal = document.querySelector('main');
+      let sectionOne = document.querySelector('.left-content')
+      principal.removeChild(sectionOne);
+
+      let sectionTwo = document.querySelector('.right-content');
+      sectionTwo.style.marginRight = 'auto';
+
+      let section = document.querySelector('.center-content');
+      section.style.backgroundColor = 'green';
+
+      let unorderedList = document.querySelector('ul');
+      unorderedList.removeChild(unorderedList.lastElementChild);
+      unorderedList.removeChild(unorderedList.lastElementChild);
+    </script>
+  </body>
+</html>

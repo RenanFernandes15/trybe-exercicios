@@ -1,0 +1,50 @@
+<main id="paiDoPai">
+  <section id="pai">
+    <section id="primeiroFilho"></section>
+    <section id="elementoOndeVoceEsta">
+      <section id="primeiroFilhoDoFilho"></section>
+      <section id="segundoEUltimoFilhoDoFilho"></section>
+    </section>
+    Atenção!
+    <section id="terceiroFilho"></section>
+    <section id="quartoEUltimoFilho"></section>
+  </section>
+</main>
+<script>
+  document.querySelector('#elementoOndeVoceEsta');
+  document.querySelector('#elementoOndeVoceEsta').parentElement.style.Color = 'rgb(136, 58, 78)';
+  document.querySelector('#primeiroFilhoDoFilho').innerText = 'A arvore, a arvore é verde.';
+  document.querySelector('#pai').firstElementChild;
+  document.querySelector('#elementoOndeVoceEsta').previousElementSibling
+  document.querySelector('#elementoOndeVoceEsta').nextSibling
+  document.querySelector('#elementoOndeVoceEsta').nextElementSibling
+  document.querySelector('#pai').lastElementChild.previousElementSibling;
+
+  let pai = document.querySelector('#pai');
+  let secao = document.createElement('section');
+  pai.appendChild(secao);
+  pai.lastElementChild.className = 'irmaoDoOndeVoceEsta';
+
+  let estou = document.querySelector('#elementoOndeVoceEsta');
+  let sec = document.createElement('section');
+  estou.appendChild(sec);
+  estou.lastElementChild.className = 'maisUmFilho';
+
+  let filhoDoFilho = document.querySelector('#primeiroFilhoDoFilho');
+  let secaoTres = document.createElement('section')
+  secaoTres.className = 'primeiroFilhoDoFilhoDoFilho';
+  filhoDoFilho.appendChild(secaoTres);
+
+  let fiDofiDofi = document.querySelector('.primeiroFilhoDoFilhoDoFilho');
+  fiDofiDofi.parentElement.parentElement.nextElementSibling;
+  
+  let primeiroFilho = document.querySelector("#primeiroFilho");
+  pai.removeChild(primeiroFilho);
+  for (let index = 0; index <= 2; index += 1) {
+    pai.removeChild(pai.lastElementChild)[index];
+  }
+  estou.removeChild(estou.lastElementChild);
+  estou.removeChild(estou.lastElementChild);
+  filhoDoFilho.removeChild(filhoDoFilho.firstElementChild);
+  
+</script>

@@ -13,7 +13,6 @@ firstLi.removeAttribute('class');
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 
-let tech = className = 'tech';
 function firstTech() {
   firstLi.className = 'tech';
   thirdLi.removeAttribute('class');
@@ -35,10 +34,22 @@ thirdLi.addEventListener('click', thirdTech);
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
+const textbox = document.querySelector('#input');
+
+textbox.addEventListener('input', () => {
+  const classTech = document.querySelector('.tech');
+  classTech.innerText = `${input.value}`;
+});
+
+
 
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portfólio?
+const meuTop = document.querySelector('#my-spotrybefy');
+meuTop.addEventListener('dblclick', () => {
+  meuTop = window.open('https://github.com/RenanFernandess', '_blank')
+});
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;

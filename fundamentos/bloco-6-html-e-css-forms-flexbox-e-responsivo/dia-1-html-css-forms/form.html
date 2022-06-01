@@ -8,14 +8,14 @@
   <title>TrybeTrip</title>
 </head>
 <body>
-  <form action="">
+  <form action="" id="form" class="position">
     <div class="position">
       <label for="fullname">Nome completo<br>
         <input type="text" name="nome-completo" placeholder="Nome completo" id="fullname"></label>
     </div>
     <div class="position">
       <label for="e-mail">E-mail<br>
-        <input type="email" name="E-mail" placeholder="Seu e-mail" id="e-mail"></label>
+        <input name="E-mail" placeholder="Seu e-mail" id="e-mail"></label>
     </div>
     <div class="position">
       <fieldset id="place">
@@ -34,12 +34,11 @@
       <label for="date">Qual a melhor data para realizar sua viagem?<br>
         <input type="date" name="data" id="date"></label>
     </div>
-    <div class="position">
+    <div id="checkbox" class="position">
       <label for="offer"><input type="checkbox" name="Oferta" id="offer">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
-
+      <br>
       <label for="requirement"><input type="checkbox" name="Requisito" required id="requirement">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros</label>
     </div>
-    <button type="submit">Enviar</button>
   </form>
   <script src="script.js"></script>
 </body>

@@ -4,6 +4,13 @@ const place = document.getElementById('place');
 const textArea = document.getElementById('because-you');
 const date = document.getElementById('date');
 const requirement = document.getElementById('requirement');
+const form = document.getElementById('form');
+
+function createElements(local, tag, type) {
+  const element = document.createElement(tag);
+  element.type = type;
+  local.appendChild(element);
+}
 
 function textLength(local, min, max) {
   local.maxLength = max;
@@ -18,6 +25,7 @@ function fullNameConfig() {
 function emailConfig() {
   textLength(email, 10, 50);
   email.required = true;
+  email.type = 'email';
 }
 
 function placeConfig() {
@@ -40,6 +48,9 @@ function requirementConfig() {
   requirement.required = true;
 }
 
+function button() {
+  createElements(form, 'input', 'submit');
+}
 
 // chama functions
 fullNameConfig();
@@ -48,3 +59,4 @@ placeConfig();
 textAreaConfig();
 dateConfig();
 requirementConfig();
+button();

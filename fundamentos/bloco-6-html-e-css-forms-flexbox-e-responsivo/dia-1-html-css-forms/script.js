@@ -50,7 +50,9 @@ function requirementConfig() {
 
 function button() {
   createElements(form, 'input', 'submit');
+  createElements(form, 'input', 'reset');
 }
+
 
 // chama functions
 fullNameConfig();
@@ -60,3 +62,9 @@ textAreaConfig();
 dateConfig();
 requirementConfig();
 button();
+
+const buttonSubmit = document.querySelector('form input[type="submit"]');
+buttonSubmit.addEventListener('click', () => {
+  event.preventDefault();
+  console.log(buttonSubmit.value);
+})

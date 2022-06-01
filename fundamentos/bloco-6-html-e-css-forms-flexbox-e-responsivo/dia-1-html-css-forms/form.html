@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>TrybeTrip</title>
+</head>
+<body>
+  <form action="">
+    <div class="position">
+      <label for="fullname">Nome completo<br>
+        <input type="text" name="nome-completo" placeholder="Nome completo" id="fullname"></label>
+    </div>
+    <div class="position">
+      <label for="e-mail">E-mail<br>
+        <input type="email" name="E-mail" placeholder="Seu e-mail" id="e-mail"></label>
+    </div>
+    <div class="position">
+      <fieldset id="place">
+        <legend>Destino Preferido</legend>
+        <label for="city"><input type="radio" name="local" id="city">Cidade</label>
+        <label for="countryside"><input type="radio" name="local" id="countryside">Campo</label>
+        <label for="beach"><input type="radio" name="local" id="beach">Praia</label>
+        <label for="mountains"><input type="radio" name="local" id="mountains">Montanhas</label>
+      </fieldset>
+    </div>
+    <div class="position">
+      <label for="because-you">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+      <br>
+      <textarea name="Por que você?" placeholder="Espaço para digitar a resposta" id="because-you"></textarea>
+    </div>
+    <div class="position">
+      <label for="date">Qual a melhor data para realizar sua viagem?<br>
+        <input type="date" name="data" required id="date"></label>
+    </div>
+    <div class="position">
+      <label for="offer"><input type="checkbox" name="Oferta" id="offer">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+
+      <label for="requirement"><input type="checkbox" name="Requisito" required id="requirement">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+    </div>
+    <button type="submit">Enviar</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

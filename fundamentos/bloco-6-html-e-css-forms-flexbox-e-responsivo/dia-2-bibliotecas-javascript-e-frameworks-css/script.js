@@ -32,9 +32,10 @@ function emailConfig() {
 }
 
 function placeConfig() {
-  const labels = place.querySelectorAll('#place input[name="local"]');
-  for (let index of labels) {
+  const inputs = place.querySelectorAll('#place input[name="local"]');
+  for (let index of inputs) {
     index.required = true;
+    index.className = 'form-check-input';
   }
 }
 
@@ -55,6 +56,21 @@ function addButtons() {
   createButtons(buttons, 'input', 'submit', 'btn btn-primary', 'button-submit');
   createButtons(buttons, 'input', 'reset', 'btn btn-secondary', 'button-reset');
 }
+
+function placeDivAddClass() {
+  const divs = place.querySelectorAll('#place div')
+  for (let index of divs) {
+    index.className = 'form-check';
+  }
+}
+
+function placeLabelAddClass() {
+  const labels = place.querySelectorAll('#place div label')
+  for (let index of labels) {
+    index.className = 'form-check-label';
+  }
+}
+
 // buttonSubmit.addEventListener('click', () => {
 //   event.preventDefault();
 //   console.log(buttonSubmit.value);
@@ -68,3 +84,5 @@ textAreaConfig();
 dateConfig();
 requirementConfig();
 addButtons();
+placeDivAddClass();
+

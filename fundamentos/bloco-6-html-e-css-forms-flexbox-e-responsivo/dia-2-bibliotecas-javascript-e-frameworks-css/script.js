@@ -52,8 +52,8 @@ function requirementConfig() {
 }
 
 function addButtons() {
-  createButtons(buttons, 'input', 'submit', '', 'button-submit');
-  createButtons(buttons, 'input', 'reset', '', 'button-reset');
+  createButtons(buttons, 'input', 'submit', 'btn btn-primary', 'button-submit');
+  createButtons(buttons, 'input', 'reset', 'btn btn-secondary', 'button-reset');
 }
 // buttonSubmit.addEventListener('click', () => {
 //   event.preventDefault();

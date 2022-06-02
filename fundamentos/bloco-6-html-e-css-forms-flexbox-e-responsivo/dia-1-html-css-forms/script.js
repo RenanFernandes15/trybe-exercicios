@@ -67,4 +67,5 @@ const buttonSubmit = document.querySelector('form input[type="submit"]');
 buttonSubmit.addEventListener('click', () => {
   event.preventDefault();
   console.log(buttonSubmit.value);
-})
+});
+

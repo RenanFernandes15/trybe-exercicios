@@ -108,6 +108,14 @@ body {
 
 .movie-container {
   flex: 1;
+  flex-basis: 700px;
+}
+
+.card-container {
+  flex-basis: 16%;
+}
+.card-container div {
+  flex: 1;
 }
 
 .aside-container {

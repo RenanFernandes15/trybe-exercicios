@@ -14,11 +14,11 @@ describe('soma dois valores', () => {
     expect(sum(0, 0)).toBe(0);
   });
 
-  // it('verifica se a função sum lança um erro qunado os parâmetros não são numeros', () => {
-  //   expect(() => sum(4, '5')).toThrow();
-  // });
+  it('verifica se a função sum lança um erro qunado os parâmetros não são numeros', () => {
+    expect(() => sum(4, '5')).toThrow('parameters must be numbers');
+  });
 
-  // it('verifica se a mensagem de erro é "parameters must be numbers" quando os parametros não são numeros', () => {
-  //   expect(() => sum(4, '5')).toThrowError(new Error('parameters must be numbers'));
-  // });
+  it('verifica se a mensagem de erro é "parameters must be numbers" quando os parametros não são numeros', () => {
+    expect(() => sum(4, '5')).toThrowError(new Error('parameters must be numbers'));
+  });
 });

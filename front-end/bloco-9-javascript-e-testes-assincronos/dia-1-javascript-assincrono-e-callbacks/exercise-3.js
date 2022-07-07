@@ -1,4 +1,4 @@
-const getPlanet = () => {
+const getPlanet = (callBack) => {
   setTimeout(() => {const mars = {
     name: "Mars",
     distanceFromSun: {
@@ -6,7 +6,13 @@ const getPlanet = () => {
       measurementUnit: "kilometers",
     },
   };
-  console.log("Returned planet: ", mars); }, 4000)
+  callBack(mars);
+  }, 4000);
 };
 
-getPlanet(); // imprime Marte depois de 4 segundos
+getPlanet((mars) => {
+  console.log(`Returned planet: `, mars);
+}); 
+// imprime Marte depois de 4 segundos
+
+module.exports = { getPlanet }

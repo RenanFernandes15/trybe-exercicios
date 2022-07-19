@@ -1,4 +1,5 @@
 import { Component } from "react";
+import './Content.css';
 
 const conteudos = [
   {
@@ -25,7 +26,7 @@ const conteudos = [
 
 const createList = ({ conteudo, bloco, status }) => {
   return (
-    <li>
+    <li className="items">
       <p>O conteúdo é: { conteudo }</p>
       <p>Status: { status }</p>
       <p>Bloco: { bloco }</p>

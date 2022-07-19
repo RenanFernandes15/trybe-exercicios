@@ -1,0 +1,16 @@
+.items {
+  background-color: rgb(249, 249, 249);
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgb(209, 209, 209);
+  padding: 20px;
+  margin-bottom: 10px;
+  max-width: 450px;
+  text-align: center;
+  list-style: none;
+}
+
+.items:hover {
+  border-color: rgb(255, 255, 255);
+  background-color: white;
+}

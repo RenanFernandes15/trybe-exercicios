@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.display {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.container {
+  max-width: 90%;
+  margin: 20px auto;
+}
+
+section.container h1 {
+  text-align: center;
+  font-size: 50px;
+}

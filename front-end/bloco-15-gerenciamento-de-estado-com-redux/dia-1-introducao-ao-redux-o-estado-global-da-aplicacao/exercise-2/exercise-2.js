@@ -13,7 +13,7 @@ const themeReducer = (state = THEME_INITIAL_STATE, action) => {
   switch (action.type) {
     case 'THEME': return {
       ...state,
-      theme: !theme,
+      theme: (theme === 'dark') ? 'light' : 'dark',
     };
     default: return state;
   }
@@ -24,7 +24,7 @@ const statusReducer = (state = STATUS_INITIAL_STATE, action) => {
   switch (action.type) {
     case 'STATUS': return {
       ...state,
-      status: !status,
+      status: (status === 'offline') ? 'online' : 'offline',
     };
     default: return state;
   }

@@ -38,9 +38,13 @@ const reducers = Redux.combineReducers({
 const store = Redux.createStore(reducers);
 
 themeButton.addEventListener('click', () => {
-  // coloque o código aqui.
+  store.dispatch({
+    type: 'THEME'
+  });
 });
 
 statusButton.addEventListener('click', () => {
-  // coloque o código aqui.
+  store.dispatch({
+    type: 'STATUS'
+  });
 });

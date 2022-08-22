@@ -9,13 +9,23 @@ const STATUS_INITIAL_STATE = {
 };
 
 const themeReducer = (state = THEME_INITIAL_STATE, action) => {
+  const { theme } = state;
   switch (action.type) {
+    case 'THEME': return {
+      ...state,
+      theme: !theme,
+    };
     default: return state;
   }
 };
 
 const statusReducer = (state = STATUS_INITIAL_STATE, action) => {
+  const { status } = state;
   switch (action.type) {
+    case 'STATUS': return {
+      ...state,
+      status: !status,
+    };
     default: return state;
   }
 };

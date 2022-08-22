@@ -1,5 +1,6 @@
 const themeButton = document.getElementById('toggle-theme');
 const statusButton = document.getElementById('toggle-status');
+const statusHTML = document.getElementById('status');
 
 const THEME_INITIAL_STATE = {
   theme: 'dark',
@@ -47,4 +48,20 @@ statusButton.addEventListener('click', () => {
   store.dispatch({
     type: 'STATUS'
   });
+});
+
+const darkTheme = () => {
+  document.body.style.backgroundColor = 'black';
+  document.body.style.color = 'white';
+}
+
+const ligtTheme = () => {
+  document.body.style.backgroundColor = 'white';
+  document.body.style.color = 'black';
+}
+
+store.subscribe(() => {
+  const { themeReducer: { theme }, statusReducer: { status } } = store.getState();
+  (theme === 'dark') ? darkTheme() : ligtTheme();
+  statusHTML.innerText = (status === 'online') ? 'online' : 'offline';
 });

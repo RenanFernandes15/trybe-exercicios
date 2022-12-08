@@ -1,1 +1,2 @@
-export function getSquareArea(side: number): number { return side ** 2 };
+export const getSquareArea = (side: number): number => side ** 2;
+

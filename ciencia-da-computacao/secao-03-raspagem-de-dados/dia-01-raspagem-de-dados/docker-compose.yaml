@@ -1,0 +1,22 @@
+version: '3.1'
+
+services:
+
+  mongo:
+    image: mongo:6.0.5
+    container_name: books_db
+    working_dir: /books_db
+    ports:
+      - 8081:27017
+    volumes:
+      - ./data:/books_db/data
+    restart: always
+
+networks:
+  default:
+    name: books_net
+
+# mongodb://localhost:8081/books_db
+
+# docker exec -it books_db bash
+# mongoimport --db library --jsonArray --file ./data/books.json
